@@ -48,6 +48,5 @@
     "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
     "analysis": "vendor/bin/phpstan analyse"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "minimum-stability": "stable"
 }
