@@ -38,10 +38,5 @@ jobs:
       - name: List Installed Dependencies
         run: composer show -D
 
-      - name: Create Database
-        run: |
-          mkdir -p database
-          touch database/database.sqlite
-
       - name: Execute tests (Unit and Feature tests) via PHPUnit
         run: composer test
