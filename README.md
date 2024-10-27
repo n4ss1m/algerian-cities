@@ -7,7 +7,7 @@
 
 **Laravel Algerian Cities** : A comprehensive Laravel package to easily manage and interact with Algerian administrative divisions. 
 
-It provides functionality to create and load Wilayas (provinces) and Communes (municipalities) in both Arabic and French, complete with postal codes and precise latitude/longitude coordinates for each commune.
+It provides functionality to load Wilayas (provinces) and Communes (municipalities) in both Arabic and French, complete with postal codes and precise latitude/longitude coordinates for each commune.
 
 ## Features
 - Includes all 58 Algerian Wilayas and 1541 Communes.
