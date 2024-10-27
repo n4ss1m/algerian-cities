@@ -1,9 +1,14 @@
-# Laravel Algerian Cities
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/a6d251bf-1ee4-4cf1-a46e-caac87819d6a" width="600" alt="Laravel Algerian Cities">
+    <p align="center">
+        <a href="https://github.com/kossa/algerian-cities/actions"><img alt="GitHub Workflow Status (master)" src="https://img.shields.io/github/actions/workflow/status/kossa/algerian-cities/laravel.yml?branch=master&label=Tests"></a>
+        <a href="https://packagist.org/packages/kossa/algerian-cities"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/kossa/algerian-cities"></a>
+        <a href="https://packagist.org/packages/kossa/algerian-cities"><img alt="Latest Version" src="https://img.shields.io/packagist/v/kossa/algerian-cities"></a>
+        <a href="https://packagist.org/packages/kossa/algerian-cities"><img alt="License" src="https://img.shields.io/packagist/l/kossa/algerian-cities"></a>
+    </p>
+</p>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/kossa/algerian-cities.svg?style=flat-square)](https://packagist.org/packages/kossa/algerian-cities)
-[![Tests](https://img.shields.io/github/actions/workflow/status/kossa/algerian-cities/laravel.yml?branch=master&label=tests&style=flat-square)](https://github.com/kossa/algerian-cities/actions/workflows/laravel.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/kossa/algerian-cities.svg?style=flat-square)](https://packagist.org/packages/kossa/algerian-cities)
-
+------
 
 **Laravel Algerian Cities** : A comprehensive Laravel package to easily manage and interact with Algerian administrative divisions. 
 
@@ -19,8 +24,8 @@ It provides functionality to load Wilayas (provinces) and Communes (municipaliti
 
 ## Requirements
 
-- **PHP** : ^8.1 | ^8.2 | ^8.3
-- **Laravel** : ^10.0 | ^11.0
+- **PHP** : 8.1 or higher
+- **Laravel** : 10 and 11
 
 ## Installation
 
@@ -137,7 +142,13 @@ This package includes `api.php` routes, allowing you to interact with the data t
 | GET | `/api/search/wilaya/{q}` | Search Wilayas by name or Arabic name |
 | GET | `/api/search/commune/{q}` | Search Communes by name or Arabic name |
 
-To encourage visitors to star your GitHub repository, you can add a friendly call-to-action in your README file. Here's how you can do it:
+## Future Planned Features
+
+- [ ] Add support for Dairas (districts), including relationships with Wilayas and Communes
+- [ ] Implement unit tests for API endpoints
+- [ ] Add support for caching to optimize API responses
+- [ ] Add support for additional languages
+- [ ] Add a configuration file to allow customizing package behaviors
 
 ## Contribution
 
@@ -155,7 +166,8 @@ We appreciate your feedback and contributions to help improve this package.
 
 ## Credits
 
-The list of Wilayas and Communes is sourced from [Wilaya-Of-Algeria](https://github.com/bahinapster/Wilaya-Of-Algeria/).
+- [Kouceyla](https://github.com/kossa) , and all [contributors](https://github.com/kossa/algerian-cities/graphs/contributors) who have helped improve and enhance the project.
+- The list of Wilayas and Communes is sourced from [Wilaya-Of-Algeria](https://github.com/bahinapster/Wilaya-Of-Algeria/).
 
 ## Security Reports
 
