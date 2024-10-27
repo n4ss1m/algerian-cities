@@ -47,7 +47,7 @@
         "Kossa\\AlgerianCities\\Console\\Commands\\AlgerianCitiesCommand::handle"
     ],
     "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
-    "analysis": "vendor/bin/phpstan analyse --memory-limit=256M",
+    "analyse": "vendor/bin/phpstan analyse --memory-limit=256M",
     "format": "vendor/bin/pint"
   },
   "minimum-stability": "stable"
