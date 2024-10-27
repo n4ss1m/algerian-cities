@@ -137,6 +137,8 @@ This package includes `api.php` routes, allowing you to interact with the data t
 | GET | `/api/search/wilaya/{q}` | Search Wilayas by name or Arabic name |
 | GET | `/api/search/commune/{q}` | Search Communes by name or Arabic name |
 
+To encourage visitors to star your GitHub repository, you can add a friendly call-to-action in your README file. Here's how you can do it:
+
 ## Contribution
 
 We welcome all contributions! Please follow these guidelines:
@@ -160,6 +162,12 @@ The list of Wilayas and Communes is sourced from [Wilaya-Of-Algeria](https://git
 If you discover any security vulnerabilities, please report them by emailing the package maintainer at `hadjikouceyla at gmail`. 
 
 All security concerns will be promptly addressed.
+
+## ⭐ Support Us
+
+If you find this package helpful, please consider giving it a ⭐ on [GitHub](https://github.com/kossa/algerian-cities) !
+Your support encourages us to keep improving the project.
+Thank you!
 
 ## License
 
