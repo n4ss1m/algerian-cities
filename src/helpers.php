@@ -8,10 +8,9 @@ if (! function_exists('communes')) {
     /**
      * Get list of communes
      *
-     * @param int|null $wilaya_id wilaya_id the id of wilaya
-     * @param bool $withWilaya withWilaya if you need to include the wilaya
-     * @param string $name name the default name user arabic_name to get arabic name
-     * @return array
+     * @param  int|null  $wilaya_id  wilaya_id the id of wilaya
+     * @param  bool  $withWilaya  withWilaya if you need to include the wilaya
+     * @param  string  $name  name the default name user arabic_name to get arabic name
      */
     function communes(?int $wilaya_id = null, bool $withWilaya = false, $name = 'name'): array
     {
@@ -47,8 +46,8 @@ if (! function_exists('commune')) {
     /**
      * Get single commune
      *
-     * @param int $id id The ID of commune
-     * @param bool $withWilaya withWilaya True if you need to include wilaya
+     * @param  int  $id  id The ID of commune
+     * @param  bool  $withWilaya  withWilaya True if you need to include wilaya
      */
     function commune(int $id, bool $withWilaya = false)
     {
@@ -67,7 +66,7 @@ if (! function_exists('wilaya')) {
     /**
      * Get single wilaya
      *
-     * @param int $id id The ID of wilaya
+     * @param  int  $id  id The ID of wilaya
      */
     function wilaya($id)
     {
