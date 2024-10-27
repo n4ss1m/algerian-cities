@@ -35,7 +35,7 @@ You can install the package via composer:
 composer require kossa/algerian-cities
 ```
 
-Next, publish the migrations and seeders by running the install command:
+Next, publish the migrations and seeders by running the installation command:
 
 
 ```bash
@@ -91,7 +91,7 @@ $single_wilaya = wilaya(1);                        // Retrieve a single Wilaya m
 
 You can leverage the provided helpers or models to populate `<select>` elements:
 
-```html
+```bladehtml
 <!-- Select for Wilayas -->
 <select>
     @foreach (wilayas() as $id => $wilaya)
@@ -132,15 +132,15 @@ You can leverage the provided helpers or models to populate `<select>` elements:
 
 This package includes `api.php` routes, allowing you to interact with the data through a RESTful API. Here are the available endpoints:
 
-| Verb | URI | Description |
-|------|-----|-------------|
-| GET | `/api/wilayas` | Retrieve all Wilayas |
-| GET | `/api/wilayas/{id}` | Retrieve a specific Wilaya by ID |
-| GET | `/api/wilayas/{id}/communes` | Retrieve all Communes from a specific Wilaya by ID |
-| GET | `/api/communes` | Retrieve all Communes |
-| GET | `/api/communes/{id}` | Retrieve a specific Commune by ID |
-| GET | `/api/search/wilaya/{q}` | Search Wilayas by name or Arabic name |
-| GET | `/api/search/commune/{q}` | Search Communes by name or Arabic name |
+| Verb | URI                          | Description                                        |
+|------|------------------------------|----------------------------------------------------|
+| GET  | `/api/wilayas`               | Retrieve all Wilayas                               |
+| GET  | `/api/wilayas/{id}`          | Retrieve a specific Wilaya by ID                   |
+| GET  | `/api/wilayas/{id}/communes` | Retrieve all Communes from a specific Wilaya by ID |
+| GET  | `/api/communes`              | Retrieve all Communes                              |
+| GET  | `/api/communes/{id}`         | Retrieve a specific Commune by ID                  |
+| GET  | `/api/search/wilaya/{q}`     | Search Wilayas by name or Arabic name              |
+| GET  | `/api/search/commune/{q}`    | Search Communes by name or Arabic name             |
 
 ## Future Planned Features
 
