@@ -91,7 +91,7 @@ $single_wilaya = wilaya(1);                        // Retrieve a single Wilaya m
 
 You can leverage the provided helpers or models to populate `<select>` elements:
 
-```php
+```html
 <!-- Select for Wilayas -->
 <select>
     @foreach (wilayas() as $id => $wilaya)
