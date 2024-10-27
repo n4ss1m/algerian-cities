@@ -1,6 +1,6 @@
-<div style="text-align:center">
+<div align="center">
     <img src="docs/package-social-preview-readme.png" width="600" alt="Laravel Algerian Cities">
-    <div>
+    <div align="center">
         <a href="https://github.com/kossa/algerian-cities/actions"><img alt="GitHub Workflow Status (master)" src="https://img.shields.io/github/actions/workflow/status/kossa/algerian-cities/laravel.yml?branch=master&label=Tests"></a>
         <a href="https://packagist.org/packages/kossa/algerian-cities"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/kossa/algerian-cities"></a>
         <a href="https://packagist.org/packages/kossa/algerian-cities"><img alt="Latest Version" src="https://img.shields.io/packagist/v/kossa/algerian-cities"></a>
@@ -91,7 +91,7 @@ $single_wilaya = wilaya(1);                        // Retrieve a single Wilaya m
 
 You can leverage the provided helpers or models to populate `<select>` elements:
 
-```bladehtml
+```html
 <!-- Select for Wilayas -->
 <select>
     @foreach (wilayas() as $id => $wilaya)
