@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/a6d251bf-1ee4-4cf1-a46e-caac87819d6a" width="600" alt="Laravel Algerian Cities">
+    <img src="docs/package-social-preview-readme.png" width="600" alt="Laravel Algerian Cities">
     <p align="center">
         <a href="https://github.com/kossa/algerian-cities/actions"><img alt="GitHub Workflow Status (master)" src="https://img.shields.io/github/actions/workflow/status/kossa/algerian-cities/laravel.yml?branch=master&label=Tests"></a>
         <a href="https://packagist.org/packages/kossa/algerian-cities"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/kossa/algerian-cities"></a>
