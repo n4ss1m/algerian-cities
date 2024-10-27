@@ -5,6 +5,10 @@ namespace Kossa\AlgerianCities;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
+/**
+ * @property Wilaya $wilaya
+ */
+
 class Commune extends Model
 {
     protected $fillable = ['name', 'arabic_name', 'post_code', 'wilaya_id', 'longitude', 'latitude'];

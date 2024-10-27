@@ -49,7 +49,6 @@ if (! function_exists('commune')) {
      *
      * @param int $id id The ID of commune
      * @param bool $withWilaya withWilaya True if you need to include wilaya
-     * @return array
      */
     function commune(int $id, bool $withWilaya = false)
     {
@@ -69,7 +68,6 @@ if (! function_exists('wilaya')) {
      * Get single wilaya
      *
      * @param int $id id The ID of wilaya
-     * @return array
      */
     function wilaya($id)
     {
