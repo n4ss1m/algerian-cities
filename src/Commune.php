@@ -7,21 +7,19 @@ use Illuminate\Support\Facades\DB;
 
 class Commune extends Model
 {
-    protected $fillable = ['name', 'arabic_name', 'post_code', 'wilaya_id', 'longitude', 'latitude', ];
-    
+    protected $fillable = ['name', 'arabic_name', 'post_code', 'wilaya_id', 'longitude', 'latitude'];
+
     /*
     |------------------------------------------------------------------------------------
     | Validations
     |------------------------------------------------------------------------------------
     */
-    public static function rules($update = false, $id=null)
+    public static function rules($update = false, $id = null)
     {
-        $common = [
-            'name'      => 'required',
+        return [
+            'name' => 'required',
             'wilaya_id' => 'required|numeric',
         ];
-    
-        return $common;
     }
 
     /*
@@ -29,16 +27,17 @@ class Commune extends Model
     | Relations
     |------------------------------------------------------------------------------------
     */
-    public function scopeWithWilaya($q, $name="name")
+    public function scopeWithWilaya($q, $name = 'name')
     {
         $q->leftJoin('wilayas', 'wilayas.id', 'communes.wilaya_id')
             ->select('communes.id', DB::raw("concat(communes.$name, ', ', wilayas.$name) as name"));
     }
+
     public function wilaya()
     {
         return $this->belongsTo(Wilaya::class)->withDefault();
     }
-    
+
     /*
     |------------------------------------------------------------------------------------
     | Attribute
