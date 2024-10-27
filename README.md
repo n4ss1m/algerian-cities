@@ -16,7 +16,7 @@ It provides functionality to load Wilayas (provinces) and Communes (municipaliti
 
 ## Features
 - Includes all 58 Algerian Wilayas and 1541 Communes.
-- Has Wilaya and Commune Eloquent models with relationships.
+- Wilaya and Commune Eloquent models with relationships.
 - Supports Arabic and French languages.
 - Includes postal codes and latitude/longitude for each commune.
 - Available as API endpoints.
@@ -172,8 +172,6 @@ We appreciate your feedback and contributions to help improve this package.
 ## Security Reports
 
 If you discover any security vulnerabilities, please report them by emailing the package maintainer at `hadjikouceyla at gmail`. 
-
-All security concerns will be promptly addressed.
 
 ## ⭐ Support Us
 
