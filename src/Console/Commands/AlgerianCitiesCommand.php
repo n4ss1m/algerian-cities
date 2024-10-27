@@ -2,8 +2,8 @@
 
 namespace Kossa\AlgerianCities\Console\Commands;
 
-use Artisan;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class AlgerianCitiesCommand extends Command
 {
