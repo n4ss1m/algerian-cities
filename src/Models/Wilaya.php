@@ -1,6 +1,6 @@
 <?php
 
-namespace Kossa\AlgerianCities;
+namespace Kossa\AlgerianCities\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
