@@ -1,0 +1,55 @@
+name: Incorrect Data Report
+description: Report Incorrect data of Wilaya or Commune
+title: "[Incorrect Data]: "
+labels: ["incorrect data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+          We're sorry to hear that we have incorrect data. Can you help us solve it by providing the following details.
+
+  - type: dropdown
+    id: wilaya-list
+    attributes:
+      label: Which Wilaya ?
+      description: You may select more than one.
+      multiple: false
+      options:
+        - Alger
+        - Blida
+
+  - type: dropdown
+    id: commune-list
+    attributes:
+      label: Which Commune ?
+      description: You may select more than one.
+      multiple: false
+      options:
+        - Alger
+        - Blida
+
+  - type: dropdown
+    id: daira-list
+    attributes:
+      label: Which Daira ?
+      description: You may select more than one.
+      multiple: false
+      options:
+        - Alger
+        - Blida
+
+  - type: textarea
+    id: incorrect-data
+    attributes:
+      label: Incorrect Data
+      description: What is the incorrect data?
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct-data
+    attributes:
+      label: Correct Data
+      description: What is the correct data?
+    validations:
+      required: true
