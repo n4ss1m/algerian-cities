@@ -12,7 +12,6 @@ body:
     id: wilaya-list
     attributes:
       label: Which Wilaya ?
-      description: You may select more than one.
       multiple: false
       options:
         - Alger
@@ -22,7 +21,6 @@ body:
     id: commune-list
     attributes:
       label: Which Commune ?
-      description: You may select more than one.
       multiple: false
       options:
         - Alger
@@ -32,7 +30,6 @@ body:
     id: daira-list
     attributes:
       label: Which Daira ?
-      description: You may select more than one.
       multiple: false
       options:
         - Alger
