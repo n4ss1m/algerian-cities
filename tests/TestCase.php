@@ -5,6 +5,8 @@ namespace Kossa\AlgerianCities\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Artisan;
+use Kossa\AlgerianCities\Providers\AlgerianCitiesServiceProvider;
+use stdClass;
 
 /**
  * Override the standard PHPUnit testcase with the Testbench testcase
@@ -17,9 +19,10 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
     public function getEnvironmentSetUp($app): void
     {
+        /** @var stdClass $CreateCitiesTable */
         $CreateCitiesTable = include __DIR__.'/../database/migrations/2024_10_26_000000_create_cities_table.php.stub';
 
-        // run the migration's up() method
+        // @phpstan-ignore-next-line
         $CreateCitiesTable->up();
 
         Artisan::call('db:seed', ['--class' => 'WilayaCommuneSeeder']);
@@ -33,7 +36,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app): array
     {
         return [
-            \Kossa\AlgerianCities\Providers\AlgerianCitiesServiceProvider::class,
+            AlgerianCitiesServiceProvider::class,
         ];
     }
 }

@@ -1,8 +1,12 @@
 includes:
     - vendor/larastan/larastan/extension.neon
 parameters:
-    level: 5
+    level: max
     paths:
         - src/
         - tests/
         - routes/
+        - database/
+
+#    ignoreErrors:
+#        - '#Call to an undefined method object::up\(\)#'

@@ -2,7 +2,9 @@
 
 namespace Kossa\AlgerianCities;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\DB;
 
 /**
@@ -12,12 +14,12 @@ class Commune extends Model
 {
     protected $fillable = ['name', 'arabic_name', 'post_code', 'wilaya_id', 'longitude', 'latitude'];
 
-    /*
-    |------------------------------------------------------------------------------------
-    | Validations
-    |------------------------------------------------------------------------------------
-    */
-    public static function rules($update = false, $id = null)
+    /**
+     * Get the validation rules that apply to the model.
+     *
+     * @return array<non-empty-string, non-empty-string>
+     */
+    public static function rules(bool $update = false, ?int $id = null): array
     {
         return [
             'name' => 'required',
@@ -30,13 +32,23 @@ class Commune extends Model
     | Relations
     |------------------------------------------------------------------------------------
     */
-    public function scopeWithWilaya($q, $name = 'name')
+    /**
+     * Get the wilaya that owns the commune.
+     *
+     * @param  Builder<Commune>  $q
+     */
+    public function scopeWithWilaya(Builder $q, string $name = 'name'): void
     {
         $q->leftJoin('wilayas', 'wilayas.id', 'communes.wilaya_id')
             ->select('communes.id', DB::raw("concat(communes.$name, ', ', wilayas.$name) as name"));
     }
 
-    public function wilaya()
+    /**
+     * Get the wilaya that owns the commune.
+     *
+     * @return BelongsTo<Wilaya, $this>
+     */
+    public function wilaya(): BelongsTo
     {
         return $this->belongsTo(Wilaya::class)->withDefault();
     }
@@ -46,7 +58,10 @@ class Commune extends Model
     | Attribute
     |------------------------------------------------------------------------------------
     */
-    public function getWilayaNameAttribute()
+    /**
+     * Get the wilaya name.
+     */
+    public function getWilayaNameAttribute(): string
     {
         return $this->wilaya->name;
     }

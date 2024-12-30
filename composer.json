@@ -43,9 +43,6 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-        "Kossa\\AlgerianCities\\Console\\Commands\\AlgerianCitiesCommand::handle"
-    ],
     "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
     "analyse": "vendor/bin/phpstan analyse --memory-limit=256M",
     "format": "vendor/bin/pint"
