@@ -29,8 +29,8 @@ class Wilaya extends Model
      *
      * @return HasMany<Commune, $this>
      */
-    public function communes(): HasMany
+    public function communes(): HasMany // @phpstan-ignore-line-until 8.2
     {
-        return $this->hasMany(Commune::class);
+        return $this->hasMany(Commune::class); // @phpstan-ignore-line-until 8.2
     }
 }

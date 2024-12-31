@@ -50,7 +50,7 @@ class Commune extends Model
      */
     public function wilaya(): BelongsTo
     {
-        return $this->belongsTo(Wilaya::class)->withDefault();
+        return $this->belongsTo(Wilaya::class)->withDefault(); // @phpstan-ignore-line-until 8.2
     }
 
     /*
